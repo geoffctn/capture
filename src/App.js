@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import OurWork from './pages/OurWork'
+import MovieDetail from './pages/MovieDetail'
 // components
 import Nav from './components/Nav'
 // styles
@@ -18,8 +19,11 @@ function App() {
         <Route exact path="/">
           <AboutUs />
         </Route>
-        <Route path="/work">
+        <Route exact path="/work">
           <OurWork />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail />
         </Route>
         <Route path="/contact">
           <ContactUs />
