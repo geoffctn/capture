@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
+    font-family: 'Inter', sans-serif;
     background: #1b1b1b;
   }
   button {

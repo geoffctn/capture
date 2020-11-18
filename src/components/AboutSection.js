@@ -2,6 +2,7 @@ import React from 'react'
 import Home1 from '../img/home1.png'
 // styles
 import styled from 'styled-components'
+import { About, Description, Image, Hide } from '../styles'
 
 const AboutSection = () => {
   return (
@@ -32,34 +33,5 @@ const AboutSection = () => {
     </About>
   )
 }
-
-// styled components
-const About = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90vh;
-  padding: 5rem 10rem;
-  color: white;
-`
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`
-const Hide = styled.div`
-  overflow: hidden;
-`
 
 export default AboutSection
