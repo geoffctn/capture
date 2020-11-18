@@ -26,6 +26,8 @@ const Nav = () => {
 }
 
 const StyledNav = styled.nav`
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +35,7 @@ const StyledNav = styled.nav`
   margin: auto;
   padding: 1rem 10rem;
   background: #282828;
+  z-index: 10;
   a {
     color: white;
     text-decoration: none;
